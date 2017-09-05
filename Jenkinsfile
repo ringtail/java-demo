@@ -1,5 +1,5 @@
 pipeline {
-    node('docker') {
+        agent 'docker'
         currentBuild.result = "SUCCESS"
         try{
           stages {
@@ -34,5 +34,5 @@ pipeline {
             to: 'zzzz@yyyyy.com'
             throw err
         }
-    }
+
 }
