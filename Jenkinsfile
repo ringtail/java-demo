@@ -1,5 +1,5 @@
-node("docker") {
-
+pipeline {
+    node("docker"){
           stages {
               stage('Build') {
                   steps {
@@ -22,5 +22,5 @@ node("docker") {
                   }
               }
         }
-
+    }
 }
