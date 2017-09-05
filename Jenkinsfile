@@ -16,7 +16,6 @@ pipeline {
     stage('Deploy') {
       steps {
         echo 'Deploying....'
-        mail(body: 'project build successful', from: 'xxxx@yyyyy.com', replyTo: 'xxxx@yyyy.com', subject: 'project build successful', to: 'yyyyy@yyyy.com')
       }
     }
   }
